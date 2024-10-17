@@ -1,0 +1,166 @@
+    *{
+      box-sizing: border-box;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(100deg, rgba(197, 197, 134, 0.778) 0%, hsl(221, 19%, 50%) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .container {
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      padding: 10px;
+      width: 420px;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+    
+    h1 {
+      margin: 10px 0px 0px 0px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #23535d;
+    }
+    
+    #set {
+      display: block;
+      position: relative;
+      margin: auto;
+      padding-top: 15px;
+    }
+    
+    #set button{
+      padding: 10px;
+      background-color: rgb(145, 116, 177);
+      font-size: 18px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #set button:active{
+      background-color: rgb(177, 173, 116);
+    }
+
+    #set button:before{
+      content:"Copied";
+      position: absolute;
+      right: 70px;
+      background-color: rgb(145, 116, 177);
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 15px;
+      display: none;
+    }
+
+    #set button:after{
+      content: "";
+      position: absolute;
+      top: 37px;
+      left: 273px;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(145, 116, 177);
+      transform: rotate(45deg);
+      display: none;
+    }
+
+    #set.active button:before,
+    #set.active button:after{
+      display: block;
+    }
+
+    #count {
+      display: inline-block;
+      position: relative;
+      margin: 4%;
+      margin-bottom: 2%;
+      color: #000000;
+      font-size: 18px;
+      text-indent: 40px;
+      font-weight: bolder;
+    }
+    
+    #see {
+      display: inline-block;
+      color: gray;
+      margin: auto;
+      margin-top: 10px;
+      margin-right: 40px;
+      cursor: pointer;
+      transition-duration: 200ms;
+    }
+    input[id='password'] {
+      padding: 15px;
+      padding-bottom: 10px;
+      border: none;
+      width: 80%;
+      outline: none;
+      border-bottom: 5px solid #827a64;
+      display: block;
+      position: relative;
+      font-size: 20px;
+      text-align: center;
+      top: 50px;
+      margin-top: -20px;
+      margin-left: 35px;
+      margin-bottom: 40px;
+      user-select: auto;
+      transition-duration: 200ms;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    i {
+      font-size: 23px;
+      transition-duration: 200ms;
+    }
+    
+    #check1, #check2, #check3, #check4, #check0 {
+      display: block;
+      position: relative;
+      margin: 1%;
+      color: #f81e1e;
+      font-size: 18px;
+      width: 92%;
+    }
+    
+    #check5{
+      display: block;
+      position: relative;
+      margin: 1%;
+      color: green;
+      font-size: 18px;
+      width: 92%;
+      text-align: center;
+    }
+
+    span {
+      margin: 10px;
+      font-weight: bold;
+    }
+    
+    input:hover {
+      border-bottom: 0px solid #560a70;
+    }
+
+    .backto{
+      text-align: center;
+      padding: 5px;
+      font-size: 25px;
+      background-color:white;
+      border: 2.5px solid black;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      padding: 10px;
+      width: fit-content;
+      border-radius: 10px;
+    }

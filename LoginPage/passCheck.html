@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Password Checker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="passCheck.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Aleo|Slabo+27px" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+</head>
+    <body>
+        <section class="container">
+            <h1>Valide Password Create</h1>
+            <input type="password" id="password" placeholder="Create Your Password..." oninput="check()">
+            <div id="set"> 
+                <div id="count">Length: 0</div>
+            </div>
+            <div class="check">
+                <div id="check0">
+                    <i class="far fa-solid fa-heart"></i><span>Password contain 8 characters</span>
+                </div>
+                <div id="check1">
+                    <i class="far fa-solid fa-heart"></i><span>Password contain a number</span>
+                </div>
+                <div id="check2">
+                    <i class="far fa-solid fa-heart"></i><span>Password contain a capital letter</span>
+                </div>
+                <div id="check3">
+                    <i class="far fa-solid fa-heart"></i><span>Password contain a small character</span>
+                </div>
+                <div id="check4">
+                    <i class="far fa-solid fa-heart"></i><span>Password contain a special character</span>
+                </div>
+                <br>
+                <div id="check5">
+                    <i class="far fa-solid fa-thumbs-up"></i><span>All the conditions are satisfy to <br>Copy the password to use</span>
+                </div>
+            </div>
+        </section>
+        <script src="passCheck.js"></script>
+        <br><br><br>
+        <a class="backto" href="index.html">Back to Login</a>
+        <br>
+        <a class="backto" href="sign.html">Back to SignUp</a>
+    </body>
+</html>
